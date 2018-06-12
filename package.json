@@ -1,0 +1,20 @@
+{
+  "name": "pipe-promises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --fix && jasmine test.js"
+  },
+  "keywords": ["promises","pipe"],
+  "author": {
+      "name": "Juan Miguel Rodriguez Ceron",
+      "email": "juanmi.rodriguez.ceron@gmail.com",
+      "url": "juanmirod.github.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.1.0",
+    "standard": "^11.0.1"
+  }
+}
