@@ -26,6 +26,21 @@ describe('pipePromises', () => {
       .then(done)
   )
 
-  xit('fails if the arguments are not functions')
-  xit('fails if any function does not returns a promise')
+  it('works with normal functions (because it is the default behaviour of then)', done =>
+    pipePromises(
+      _ => 4,
+      x => x * 3
+    )
+      .then(res => expect(res).toBe(12))
+      .then(done)
+  )
+
+  it('fails if any argument is not a function', done =>
+    pipePromises(two, 4, double)
+      .then(done.fail)
+      .catch(err =>
+        expect(err).toEqual(new Error('pipePromises expected a function and got a number'))
+      )
+      .then(done)
+  )
 })
