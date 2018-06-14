@@ -27,4 +27,20 @@ pipePromises(
 
 ```
 
+> ¿How can I add a initial value?
+
+Simple, add a constant function as first parameter
+
+```
+
+pipePromises(
+    () => 2,
+    double,
+    double
+  )
+  .then(res => console.assert(res === 8))
+
+
+```
+
 This README is a WIP, for more information about the behaviour [check the test.js file](https://github.com/juanmirod/pipe-promises/blob/master/test.js)

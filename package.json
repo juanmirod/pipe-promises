@@ -1,7 +1,7 @@
 {
   "name": "pipe-promises",
   "version": "1.0.0",
-  "description": "",
+  "description": "A functions pipe that works with promises",
   "main": "index.js",
   "scripts": {
     "test": "standard --fix && jasmine test.js"
