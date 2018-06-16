@@ -1,8 +1,8 @@
 # pipePromises
 
-pipePromises is a function that allows to pipe functions that may return a promise and it runs them sequentially, passing the returned Promise from one ti the next and returning a Promise that resolves when the last promise is resolved or is rejected of any promise in the chain gets rejected. 
+pipePromises is a function that allows to pipe functions that may return a promise and it runs them sequentially. Like a chain of promises, but more DRY. 
 
-The easiest way to explain it is with an example:
+The easiest way to explain how pipePromises works it is with an example:
 
 ```javascript
 
@@ -29,7 +29,7 @@ pipePromises(
 
 > How can I add a initial value?
 
-pipePromises takes some functions as arguments and returns a promise, not another function. Is not a functional pipe or a reducer for promises, is a way to make a long chain of promises bereable. If you want to add a initial value you can start with a constant function:
+pipePromises takes some functions as arguments and returns a promise. Is not a functional pipe (it does not returns a function) or a reducer for promises (it doesn't take a initial value), is a way to make a long chain of promises bereable. If you want to add a initial value you can start with a constant function:
 
 ```javascript
 
