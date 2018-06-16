@@ -29,7 +29,7 @@ pipePromises(
 
 > How can I add a initial value?
 
-pipePromises takes some functions as arguments and returns a promise, not another function. Is not a functional pipe or a reducer for promises, is a way to make a long promises chain bereable. If you want to add a initial value you can start with a constant function:
+pipePromises takes some functions as arguments and returns a promise, not another function. Is not a functional pipe or a reducer for promises, is a way to make a long chain of promises bereable. If you want to add a initial value you can start with a constant function:
 
 ```javascript
 
@@ -45,7 +45,7 @@ pipePromises(
 
 > Can I pass an array of functions?
 
-pipePromises will reject if any argument is not a function, but you can use the spread operator:
+Yes! pipePromises will reject if any argument is not a function, but you can use the spread operator:
 
 ```javascript
 
@@ -53,5 +53,14 @@ pipePromises(...[() => 2, double, double])
   .then(res => console.assert(res === 8))
 
 ```
+
+## Install
+
+```
+
+npm i pipe-promises
+
+```
+
 
 This README is a WIP, for more information about the behaviour [check the test.js file](https://github.com/juanmirod/pipe-promises/blob/master/test.js)
