@@ -1,16 +1,19 @@
 {
   "name": "pipe-promises",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A functions pipe that works with promises",
   "main": "index.js",
   "scripts": {
     "test": "standard --fix && jasmine test.js"
   },
-  "keywords": ["promises","pipe"],
+  "keywords": [
+    "promises",
+    "pipe"
+  ],
   "author": {
-      "name": "Juan Miguel Rodriguez Ceron",
-      "email": "juanmi.rodriguez.ceron@gmail.com",
-      "url": "juanmirod.github.com"
+    "name": "Juan Miguel Rodriguez Ceron",
+    "email": "juanmi.rodriguez.ceron@gmail.com",
+    "url": "juanmirod.github.com"
   },
   "license": "MIT",
   "devDependencies": {
