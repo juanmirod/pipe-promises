@@ -1,6 +1,6 @@
 {
   "name": "pipe-promises",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A functions pipe that works with promises",
   "main": "index.js",
   "scripts": {
