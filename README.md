@@ -12,7 +12,7 @@ const getFromSomewhere = () => new Promise((resolve, reject) =>
 const double = x => 2*x
 
 // tired of chaining promises and repeating '.then' al over the place?
-getFromSomewhere(2)
+getFromSomewhere()
   .then(double)
   .then(double)
   .then(res => console.assert(res === 8))
