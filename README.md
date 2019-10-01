@@ -63,4 +63,4 @@ npm i pipe-promises
 ```
 
 
-This README is a WIP, for more information about the behaviour [check the test.js file](https://github.com/juanmirod/pipe-promises/blob/master/test.js)
+For more information about the behaviour [check the test.js file](https://github.com/juanmirod/pipe-promises/blob/master/test.js)
